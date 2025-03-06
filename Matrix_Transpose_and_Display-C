@@ -1,0 +1,27 @@
+// Transpose display of matrix 
+#include <stdio.h>
+int main()
+{
+int i,j,m,n,a[5][5];
+printf("Enter the Order of matrix A :");
+scanf("%d %d",&m,&n);
+printf("Enter Elements of Matrix A :\n ");
+for(i=1;i<=m;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+
+printf("The Transpose of the given matrix results in the matrix : \n");
+for(i=1;i<=m;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            printf("%d ",a[j][i]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
